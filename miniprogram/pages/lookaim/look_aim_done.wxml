@@ -1,0 +1,27 @@
+<view class="container" >
+
+<view class="cu-form-group ">
+		<view class="title" style="font-size:40rpx"  >主题</view>
+  	<view style="font-size:40rpx">{{topic}}</view>
+</view>
+<view class="cu-form-group " >
+		<view class="title" style="font-size:40rpx">目标完成时间</view>  
+		<view style="font-size:40rpx">{{long}}</view>
+</view>   
+<view class="cu-form-group " >
+		<view class="title" style="font-size:40rpx">详细描述</view>  
+		<view style="font-size:40rpx">{{ moremessage}}</view>
+</view>
+<view class="cu-form-group " >
+		<view class="title" style="font-size:40rpx">打卡</view>  
+</view>
+<view class="cu-timeline" wx:for="{{daka}}">
+  <view class="cu-time" >{{item.date}}</view>
+    <view class="cu-item text-blue">
+     <view class="content bg-blue shadow-blur">
+      <text></text> {{item.message}}
+    </view>
+  </view>
+</view>
+<image id="img" src="../images/ashbin.png" bindtap="delete_aim"> </image>
+</view>

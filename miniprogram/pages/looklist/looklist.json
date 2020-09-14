@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "van-field": "../../dist/field/index",
+     "van-panel": "../../dist/panel/index",
+    "van-checkbox": "../../dist/checkbox/index",
+    "van-checkbox-group": "../../dist/checkbox-group/index",
+    "van-icon": "../../dist/icon",
+    "van-button": "../../dist/button",
+    "van-row": "../../dist/row",
+    "van-col": "../../dist/col",
+    "van-grid": "../../dist/grid/index",
+    "van-grid-item": "../../dist/grid-item/index"
+  }
+}

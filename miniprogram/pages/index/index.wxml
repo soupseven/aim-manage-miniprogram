@@ -1,0 +1,25 @@
+<view class="container" >
+ <button 
+      open-type="getUserInfo" 
+      class="userinfo-avatar"
+      bindgetuserinfo="onGetUserInfo"
+    >
+    <image src='{{avatarUrl}}' mode='scaleToFill' plain='true' class="img"></image>
+</button>
+<text class="nickname">{{nickname}}</text>
+<view class="Left"> </view>
+<view class="aim" bindtap="aim">
+     <image id="icon" src='../images/task.png' ></image>
+     <text id="wenzi">目标</text>
+</view>
+<view class="list" bindtap="list">
+ <image id="icon" src='../images/file.png' ></image>
+ <text id="wenzi"  style="margin-left: 10rpx">每日清单</text>
+</view>
+
+</view>
+<text class="ren">{{saying}}</text>
+<view class="shuru" wx:if="{{showchange}}">
+<input placeholder="请输入封面座右铭"  model:value="{{saying}}" bind:change="bindKeyInput" ></input>
+</view>
+<image id="img" src="../images/setting.png" bindtap="setting"> </image>

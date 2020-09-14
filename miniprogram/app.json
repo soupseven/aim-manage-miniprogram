@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/aims/aims",
+    "pages/add_aims/add_aims",
+    "pages/list/list",
+    "pages/lookaim/lookaim",
+    "pages/lookaim/look_aim_done",
+    "pages/add_list/add_list",
+    "pages/looklist/looklist"
+  ],
+  "window": {
+    "backgroundColor": "#39b54a",
+    "backgroundTextStyle": "custom",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "Step by Step",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

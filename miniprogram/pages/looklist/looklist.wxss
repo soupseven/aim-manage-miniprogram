@@ -1,0 +1,35 @@
+/* miniprogram/pages/show/show.wxss */
+.checkbox{
+  flex-direction: column;
+
+    width: 240rpx;
+    height: 90rpx;
+}
+.grid-custom{
+  position: fixed;
+  bottom: 0rpx !important;
+  color:green !important;
+}
+.bottoms{
+  margin-bottom: 0rpx;
+}
+.van-grid--primary{
+  margin-bottom: 0; 
+}
+#img{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 50rpx;
+  right: 50rpx;
+}
+page{
+  height: 100%;
+  width: 100%;
+  }
+
+  .container{
+    width: 100%;
+    height: 100%;
+    background-color: #fceb67;
+  }

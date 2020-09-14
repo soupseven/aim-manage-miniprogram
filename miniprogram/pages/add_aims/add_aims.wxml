@@ -1,0 +1,28 @@
+<view class="cu-form-group ">
+		<view class="title" style="font-size:40rpx"  >主题</view>
+    <input style="font-size:40rpx" bindblur="input_topic"></input>
+	</view>
+<view class="cu-form-group " >
+		<view class="title" style="font-size:40rpx">目标完成时间</view>
+     	<input style="font-size:40rpx" placeholder="{{long}}" bindblur="input_time"></input>
+	</view> 
+  <view class="flex flex-wrap padding-sm " >
+   <view class="cu-tag round  bg-blue light text-xl" style="font-size:40rpx" bindtap="choose30">30天</view>
+   <view class="cu-tag round  bg-blue light text-xl" style="font-size:40rpx" bindtap="choose60">60天</view>
+    <view class="cu-tag round  bg-blue light text-xl" style="font-size:40rpx" bindtap="choose90">90天</view>
+  </view>
+  
+  <view class="padding bg-white">
+
+</view>
+  	<view class="cu-form-group align-start">
+		<textarea style="font-size:40rpx" maxlength="-1"  bindinput="moreInput" placeholder="关于目标的详细描述以及完不成的惩罚等"></textarea>
+	</view>
+  <view class="padding">
+  <!-- <view class="cu-avatar-group">
+    <view class="cu-avatar round lg" wx:for="{{1}}" wx:key style="background-image:url(https://706f-potato-7bxul-1302996334.tcb.qcloud.la/%E5%A7%93%E5%90%8D_icon.png?sign=b513ab91e62a2ed9331f78371a711a5e&t=1599206401);"></view>
+  </view> -->
+</view>
+  <view class="padding flex flex-direction">
+  <button class="cu-btn bg-blue margin-tb-sm lg" bindtap="create">创建目标</button>
+</view>

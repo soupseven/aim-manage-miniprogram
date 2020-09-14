@@ -1,0 +1,43 @@
+Page({
+  data: {
+    getdata:'',
+    topic:"",
+    long:"",
+    private:false,
+    moremessage:"",
+    witness:[],
+    isDone:false,
+    date:"",
+    daka:[],
+    id:'',
+   show:false,
+   daka_message:""
+  },
+  onLoad: function (options) {
+    this.setData({
+      getdata:JSON.parse(options.aim)   
+    })
+    this.setData({
+      topic:this.data.getdata.topic,
+      long:this.data.getdata.long,
+      private:this.data.getdata.private,
+      moremessage:this.data.getdata.moremessage,
+      witness:this.data.getdata.witness,
+      date:this.data.getdata.date,
+      daka:this.data.getdata.daka,
+      id:this.data.getdata._id,
+    })
+  },
+delete_aim:function(){
+  console.log(this.data.id)
+wx.cloud.callFunction({
+  name:'aim_delete',
+  data:{
+    id:this.data.id
+  }
+})
+wx.navigateBack({
+  delta: 1,
+})
+},
+})

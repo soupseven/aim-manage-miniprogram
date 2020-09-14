@@ -1,0 +1,12 @@
+<view class="container" >
+<view class="cu-form-group bg-yellow">
+    <input placeholder="请输入事情" style="font-size:40rpx"  model:value="{{topic}}" bind:change="bindKeyInput">
+    </input> 
+    <button bindtap="add" class="bg-yellow cuIcon-check text-black "></button>
+</view>
+<van-checkbox-group value="{{result}}" bind:change="onChange" class="checkbox">
+  <van-checkbox style="font-size:50rpx" custom-class="textsize" icon-size="25px" wx:for="{{list}}" name="{{index}}">{{item}}</van-checkbox>
+</van-checkbox-group>
+
+<image id="img" src="../images/ashbin.png" bindtap="delete"> </image>
+</view>

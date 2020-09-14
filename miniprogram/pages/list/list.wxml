@@ -1,0 +1,5 @@
+
+<image id="img" src="../images/add.png" bindtap="addthings"> </image>
+ <van-cell is-link wx:for="{{listtodo}}" data-name="{{index}}" bind:click="look" icon="orders-o"
+  title="{{item.createDate}}"  size="large"
+> </van-cell>
